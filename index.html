@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Name | Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>My Portfolio</h1>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      <ul id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button class="resume-btn" onclick="downloadResume()">Download Resume</button></li>
+        <li><button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section class="hero" id="home">
+    <h2>Hello, I'm <span>Aditya S. Jaiswar</span></h2>
+    <p>A passionate Web and Android App Developer & Designer</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </section>
+
+  <section class="about" id="about">
+    <div class="about-container">
+      <div class="about-image">
+        <img src="profile.jpg" alt="Profile Picture" />
+      </div>
+      <div class="about-content">
+        <h2>About Me</h2>
+        <p> Hi! I'm <strong>Aditya S. Jaiswar</strong>, a passionate web developer dedicated to building responsive and user-friendly websites. I enjoy solving real-world problems through clean and efficient code.</p>
+        <h3>Skills</h3>
+        <ul class="skills-list">
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>Firebase</li>
+          <li>Java (Android)</li>
+          <li>Git & GitHub</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  
+  <section class="projects" id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Work Easy</h3>
+          <p>A real-time Android app for booking house services like cleaning, painting, etc. Built with Firebase & Java.</p>
+          <a href="https://github.com/your-github-link" class="btn">View Project</a>
+        </div>
+        <div class="project-card">
+          <h3>Portfolio Website</h3>
+          <p>This portfolio you're seeing! Built with HTML, CSS, and JavaScript with dark mode and responsive design.</p>
+          <a href="https://github.com/your-github-link" class="btn">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="education" id="education">
+    <div class="container">
+      <h2>Education</h2>
+      <div class="edu-card">
+        <h3>Bachelor of Science in Information Technology</h3>
+        <p>Mumbai University</p>
+        <p>Sathaye College</p>
+        <span>2022 - 2025</span>
+      </div>
+      <div class="edu-card">
+        <h3>Junior College (Class 12)</h3>
+        <p>Sathaye College</p>
+        <span>2018 - 2020</span>
+      </div>
+      <div class="edu-card">
+        <h3>Schooling (Class 10)</h3>
+        <p>Kalina Education Society</p>
+        <span>Passed 2018</span>
+      </div>
+    </div>
+  </section>
+  
+  <section class="contact" id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form id="contact-form" action="mailto:adityajaiswar2126@gmail.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Aditya Jaiswar. All rights reserved.</p>
+    <div class="socials">
+      <a href="#">LinkedIn</a>
+      <a href="https://github.com/drew-coding/">GitHub</a>
+      <a href="mailto:adityajaiswar2126@gmail.com">Email</a>
+    </div>
+  </footer>
+
+  <button class="scroll-to-top" id="scroll-to-top">&#8593;</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
